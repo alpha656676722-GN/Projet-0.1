@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Vibes AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌙 Ramadan <span class="gold">Vibes</span></h1>
+        <p>Habille-toi pour la fête avec l'IA</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <label for="imageInput" class="upload-btn">
+                📸 Choisir une photo
+            </label>
+            
+            <input type="file" id="imageInput" accept="image/*" hidden>
+            
+            <div id="preview-container">
+                <p id="placeholder-text">Ta photo ici</p>
+                <img id="preview" src="" alt="Aperçu" style="display:none; width:100%; border-radius: 10px;">
+            </div>
+        </div>
+
+        <div class="options">
+            <h3>Choisis ta tenue :</h3>
+            <div class="grid">
+                <button class="style-btn" data-style="djellaba">Djellaba Blanche</button>
+                <button class="style-btn" data-style="caftan">Caftan Doré</button>
+                <button class="style-btn" data-style="qamis">Qamis Moderne</button>
+            </div>
+        </div>
+
+        <button id="generateBtn" class="main-btn">Générer ma photo ✨</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+					</html>
